@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    /* border: 1px solid springgreen; */
+}
+body{
+    font-family: Smythe;
+}
+.innerContainer{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.container{
+    background-image: url('../images/bg\ img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    color: #fff;
+}
+h2{
+    padding: 24px 0 19px 26px;
+    font-size: 39px;
+    font-weight: 400;
+}
+.headerDescription{
+    padding: 0 25px 0 26px;
+    font-size: 22px;
+}
+.menuItems{
+    width: 508px;
+    margin:  0 auto;
+    position: relative;
+   
+}
+.item1,.item2,.item3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item2,
+.item3{
+    padding-top: 25px;
+}
+.itemTitle{
+    font-size: 28px;
+}
+.itemPrice{
+    font-size: 20px;
+}
+.itemDescription{
+    display: flex;
+}
+.itemImage{
+    width: 70px;
+    height: 89px;
+    margin-right: 33px;
+}
+.itemName{
+    color: #8B8B8B;
+    font-size: 16px;
+    padding: 10px 0;
+}
+.btn{
+    border: 1px solid #DEDEDE;
+    stroke-width: 1.5px;
+    font-family: inter;
+    border-radius: 50%;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+.divider{
+    margin-top: 40px;
+}
+.itemOrder{
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    text-align: center;
+    padding:45px 0 70px 0;
+    font-size: 28px;
+}
+.remove{
+    font-size: 12px;
+    color: #BBB;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.sumary-divider{
+    background: #393333;
+}
+.total{
+    color: #0E0E0E;
+    font-size: 28px;
+}
+.btnSummary{
+    max-width: 508px;
+    margin: 0 auto;
+}
+.summaryBtn{
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 3px;
+    background: #16DB99;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 16px;
+}
+.darkmode{
+    background-color: black;
+    color: white;
+}
+.dark-btn{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+}
+.dark-btn img{
+    width: 100%;
+    cursor: pointer;
+}
+.modal{
+    width: 508px;
+    margin: 0 auto;
+    border-radius: 3.89px;
+    background: #FFF;
+    position: absolute;
+    top:13%;
+    left: 0;
+    right: 0;
+    display: none;
+}
+#sucess{
+    border-radius: 3px;
+    background-color: #ECFDF5;
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    color: #065F46;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 0;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+form h4{
+    color: #000;
+    font-family: Verdana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 40px 0;
+}
+label{
+    display: block;
+    width: 100%;
+    padding-top: 23px;
+}
+ input{
+    border-radius: 3.89px;
+    border: 1.2px solid #757575;
+    color: #757575;
+    padding: 13px 15px;
+    width: 100%;
+    font-family: Verdana;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.formBtn{
+    width: 400px;
+}
+@media (max-width:420px) {
+    *{
+        border: 1px solid greenyellow;
+    }
+    .innerContainer {
+            max-width: 400px;
+            margin: 0 auto;
+    }
+    .container {
+        background-size: cover;
+        height: auto;
+    }
+    .modal {
+        width: 80%;
+    }
+    .formBtn {
+         width: 100%;
+    }
+    h2 {
+        padding: 24px 0 19px 26px;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .headerDescription {
+        /* padding: 0 25px 0 26px; */
+        font-size: 20px;
+    }
+    .menuItems {
+       max-width: none;
+       width: 80%;
+       margin: 0 auto;
+    }
+    .itemImage {
+        width: 50px;
+        height: 50px;
+        margin-right: 40px;
+        
+    }
+    .wrap{
+        line-break: normal;
+        display: block;
+    }
+    form h4 {
+        font-size: 20px;
+    }
+    input{
+        font-size: 13px;
+    }
+    .btnSummary {
+            width: 90%;
+    }
+}
