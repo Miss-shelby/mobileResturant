@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DynaPuff&family=Inter&family=Lexend+Deca&family=Poppins:ital,wght@1,100;1,400;1,500&family=Roboto&family=Smythe&display=swap"
+        rel="stylesheet">
+    <title>Mobile Menu Resturant</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <header class="innerContainer">
+        <div class="container">
+            <h2>Jimmy’s Diner</h2>
+            <p class="headerDescription">The best burgers and pizzas in town.</p>
+        </div>
+    </header>
+    <main>
+        <div class="menuItems innerContainer" id="menuOrder">
+            <div class="item1">
+                <div class="itemDescription">
+                    <div class="itemImage"><img src="../images/pizza.png" alt="" srcset=""></div>
+                    <ul class="itemContent" id="itemContent1">
+                        <li class="itemTitle">Pizza</li>
+                        <li class="itemName">pepperoni,mushrom,<span class="wrap">mozarella</span></li>
+                        <li class="itemPrice">$14</li>
+                    </ul>
+                </div>
+                <div class="addBtn">
+                    <p class="btn">+</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="item2">
+                <div class="itemDescription">
+                    <div class="itemImage"><img src="../images/hamburger.png" alt="" srcset=""></div>
+                    <ul class="itemContent">
+                        <li class="itemTitle">Hamburger</li>
+                        <li class="itemName">beef, cheese, lettuce</li>
+                        <li class="itemPrice">$12</li>
+                    </ul>
+                </div>
+                <div class="addBtn">
+                    <p class="btn">+</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="item3">
+                <div class="itemDescription">
+                    <div class="itemImage"><img src="../images/beer.png" alt="" srcset=""></div>
+                    <ul class="itemContent">
+                        <li class="itemTitle">Beer</li>
+                        <li class="itemName">grain, hops, yeast, water</li>
+                        <li class="itemPrice">$12</li>
+                    </ul>
+                </div>
+                <div class="addBtn">
+                    <p class="btn">+</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="summary">
+                <p class="title">Your order</p>
+                <div class="itemMenu">
+                    <ul class="itemOrder">
+                        <li class="itemTitle"> <span  class="remove"></span></li>
+                        <li class="itemPrice"></li>
+                    </ul>
+                </div>
+                <hr class="sumary-divider">
+                <div class="total">
+                    <p class="total">Total price:</p>
+                    <p id="totalPrice">$0</p>
+                </div>
+                <div class="btnSummary">
+                    <button class="summaryBtn" id="summaryBtn">complete order</button>
+                </div>
+            </div>
+            <div class="modal">
+                <form action="">
+                    <h4>Enter card details</h4>
+                    <label><input  required id="inputName" type="text" placeholder="Enter your name"></label>
+                    <label><input  required type="text" placeholder="Enter card number" ></label>
+                    <label><input  required type="text" placeholder="Enter CVV"  maxlength="3"></label>
+                    <div class="formBtn">
+                        <button class="summaryBtn" id="payBtn">Pay</button>
+                    </div>
+                </form>
+            </div>
+            <div id="sucess"> john your item has been added to cart</div>
+        </div>
+    <div class="dark-btn">
+        <img id="dark-img" src="../images/night-mode (3).png" alt="" srcset="">
+    </div>
+    </main>
+<script src="../javascript/menus.js"></script>    
+</body>
+</html>
